@@ -1,5 +1,5 @@
 const playlist = [
-    { title: 'Don\'t $ug4r C04t iT', artist: 'Ministry of Entertainment', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+    { title: 'SoundHelix Song 1', artist: 'T. Schürger', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
     { title: 'Get OFF My Colony!', artist: 'Ministry of Entertainment', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
     { title: 'GOVERNMENT APPROVED TRACK #3', artist: 'Ministry of Entertainment', src: 'track3.mp3' }
 ];
@@ -26,8 +26,6 @@ function formatTime(seconds) {
 }
 
 audio.addEventListener('loadedmetadata', () => {
-    console.log('Metadata loaded');
-    console.log(formatTime(audio.duration));
     durationEl.textContent = formatTime(audio.duration);
     audioNameEl.textContent = playlist[0].title;
     audioArtistEl.textContent = playlist[0].artist || 'Unknown Artist';

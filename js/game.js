@@ -86,7 +86,16 @@ function sauronAnalysis(email, topic, index) {
             }
         };
 
-        sauronResults[topic] ??= {};
+        if (!sauronResults[topic]) {
+            sauronResults[topic] = {};
+            let topicElem = document.createElement("div");
+            topicElem.innerHTML = `${topic}<br>&nbsp;Analysed: 0<br>`;
+            topicElem.id = `topic-${topic}`;
+            topicElem.className = 'topic';
+
+            document.getElementById("sidebar").appendChild(topicElem)
+        }
+
         sauronResults[topic][index] ??= {};
         sauronResults[topic][index][i] ??= {};
         sauronResults[topic][index][i]["govt"] = 0;
@@ -126,6 +135,7 @@ function sauronAnalysis(email, topic, index) {
                 sauronResults[topic][index][i]["bur"] = email.content[i].effect.true[2];
                 sauronResults[topic][index][i]["rebel"] = email.content[i].effect.true[3];
                 textEl.id = "yes";
+                document.getElementById(`topic-${topic}`).innerHTML = `${topic}<br>&nbsp;Analysed: ${Object.keys(sauronResults[topic]).length}<br>`;
             };
 
             let no = document.createElement("button");
@@ -136,17 +146,18 @@ function sauronAnalysis(email, topic, index) {
                 sauronResults[topic][index][i]["bur"] = email.content[i].effect.false[2];
                 sauronResults[topic][index][i]["rebel"] = email.content[i].effect.false[3];
                 textEl.id = "no";
+                document.getElementById(`topic-${topic}`).innerHTML = `${topic}<br>&nbsp;Analysed: ${Object.keys(sauronResults[topic]).length}<br>`;
             };
 
             let undecided = document.createElement("button");
             undecided.textContent = "Undecided";
             undecided.onclick = () => {
-                text.
-                sauronResults[topic][index][i]["govt"] = email.content[i].effect.unsure[0];
-                sauronResults[topic][index][i]["civ"] = email.content[i].effect.unsure[1];
-                sauronResults[topic][index][i]["bur"] = email.content[i].effect.unsure[2];
-                sauronResults[topic][index][i]["rebel"] = email.content[i].effect.unsure[3];
+                sauronResults[topic][index][i]["govt"] = 0;
+                sauronResults[topic][index][i]["civ"] = 0;
+                sauronResults[topic][index][i]["bur"] = 0;
+                sauronResults[topic][index][i]["rebel"] = 0;
                 textEl.id = "undecided";
+                document.getElementById(`topic-${topic}`).innerHTML = `${topic}<br>&nbsp;Analysed: ${Object.keys(sauronResults[topic]).length}<br>`;
             };
 
             sauronLeft.appendChild(yes);
