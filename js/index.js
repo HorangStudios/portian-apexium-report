@@ -10,11 +10,14 @@ function stringGen() {
 
 function toggleLauncher() {
     const launcher = document.getElementById("launcher");
+    const launcherToggle = document.getElementById("launcherToggle");
 
     if (launcher.style.display == 'block') {
         launcher.style.display = 'none';
+        launcherToggle.style.border = "#5d5d5d outset 3px";
     } else {
         launcher.style.display = 'block';
+        launcherToggle.style.border = "#4d4d4d inset 3px";
     }
 }
 
@@ -105,13 +108,6 @@ function spawnwindow(name, URL, icon, height, width) {
     });
 }
 
-function focusWindow(windowElem) {
-    const windows = document.querySelectorAll('.window');
-    windows.forEach((elem) => elem.classList.remove('focused'));
-
-    windowElem.classList.add('focused');
-}
-
 setInterval(async function () {
     var theSpan = document.getElementById("time")
     var theDate = new Date()
@@ -134,6 +130,14 @@ setInterval(async function () {
     theSpan.title = theDate.toDateString()
 })
 
+function moveWindowUp(window) {
+    let windows = document.querySelectorAll('.window');
+    let highest = 0;
+
+    windows.forEach(w => { let z = parseInt(w.style.zIndex) || 0; if (z > highest) highest = z; });
+    window.style.zIndex = highest + 1
+}
+
 function toggleWindowVisibility(id, isVisible) {
     let window = document.getElementById(id);
     let menuitem = document.getElementById(`${id}-menu`);
@@ -141,8 +145,12 @@ function toggleWindowVisibility(id, isVisible) {
     menuitem.style.display = isVisible ? "inline-flex" : "none";
     menuitem.classList.add("menubuttonminimizing");
 
+    menuitem.onclick = () => minimizeWindow(id, true);
+    window.onmousedown = () => moveWindowUp(window);
     $(window).draggable({ handle: ".header", containment: "#section", opacity: 0.75 });
     $(window).resizable({ containment: "#section" });
+
+    moveWindowUp(window);
 }
 
 function minimizeWindow(id, isMinimizing) {
@@ -152,10 +160,40 @@ function minimizeWindow(id, isMinimizing) {
 
     if (isMinimizing) {
         menuitem.classList.remove("menubuttonminimizing");
-        menuitem.onclick = () => {minimizeWindow(id, false)};
-    }
-    else {
+        menuitem.onclick = () => { minimizeWindow(id, false) };
+    } else {
+        moveWindowUp(window)
         menuitem.classList.add("menubuttonminimizing");
-        menuitem.onclick = () => {minimizeWindow(id, true)};
+        menuitem.onclick = () => { minimizeWindow(id, true) };
     };
 }
+
+function newNotification(text) {
+    let toast = document.createElement('div');
+    toast.innerHTML = `<span>${text}</span>`;
+    toast.className = 'notification';
+    toast.style.animation = 'slideInUp 0.25s both';
+
+    document.getElementById("section").appendChild(toast);
+    setTimeout(() => {
+        toast.style.animation = 'slideOutDown 0.5s both';
+        setTimeout(() => toast.remove(), 500);
+    }, 2500);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function start() {
+    await sleep(1000);
+    document.getElementById("body").style.display = 'block';
+    await sleep(1000);
+    document.getElementById("footer").style.display = 'flex';
+    await sleep(100);
+    document.getElementById("section").style.display = 'block';
+    await sleep(500);
+    dayCycle(0);
+}
+
+start();

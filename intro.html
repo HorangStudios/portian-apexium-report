@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Loading Screen</title>
+  <title>Portian Apexium Report</title>
   <link rel="stylesheet" href="assets/style.css" id="style">
 </head>
 
@@ -12,11 +12,16 @@
     <img src="assets/intro.webp" id="loadimage" alt="Loading Image">
     <h1 class="text">PorOS V.1</h1>
   </div>
+  <div class="effect" style="z-index: 5;"></div>
 </body>
 
 </html>
 
 <style>
+  * {
+    cursor: none;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -39,7 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 3;
   }
 
   #loader img {
@@ -63,11 +68,11 @@
 
   @keyframes rotate {
     from {
-      transform: scale(1);
+      transform: rotate(0deg) scale(1);
     }
 
     to {
-      transform: scale(5);
+      transform: rotate(180deg) scale(5);
     }
   }
 
@@ -78,6 +83,16 @@
 
     to {
       opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
     }
   }
 </style>
@@ -98,10 +113,6 @@
     return p;
   }
 
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-
   async function beginIntro() {
     document.querySelectorAll('.introtext').forEach(element => {
       element.remove();
@@ -115,8 +126,22 @@
 
     const text = document.querySelector('#loader h1');
     text.style.animation = 'fade-in 2.5s linear'
-    await sleep(9000)
+
+    await sleep(8000)
+    document.querySelectorAll('.introtext').forEach(element => {
+      element.remove();
+    });
+    text.style.animation = 'fade-out 2.5s linear'
+    img.style.animation = 'fade-out 2.5s linear, rotate 60s linear infinite'
+
+    await sleep(2000)
+    text.style.display = "none";
+    img.style.display = "none";
     window.location.href = "index.html"
+  }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 
   async function start() {
@@ -147,7 +172,7 @@
     createEl("Verifying Operator Identity...")
     await sleep(500);
     var log = createEl("Password: ");
-    await sleep(1500);
+    await sleep(1000);
     log.remove();
     var log = createEl("Password: *");
     await sleep(100);
@@ -183,6 +208,4 @@
   }
 
   start();
-
-
 </script>

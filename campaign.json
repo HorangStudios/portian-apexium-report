@@ -1,0 +1,877 @@
+[
+    {
+        "Regulation Decision": [
+            {
+                "writer": "clara.venn@mailnow.pt",
+                "writerName": "Clara Venn",
+                "title": "Emergency Regulation Passed Overnight",
+                "date": "08:20",
+                "content": [
+                    {
+                        "text": "Late last night, the Central Administrative Office approved a fast-tracked amendment\n to the Public Assembly and Safety Code.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                0
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The decision was reportedly signed off by the acting Senior Regulatory Officer, \nwho has been under temporary review confinement since last quarter.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -2,
+                                -1
+                            ],
+                            "true": [
+                                -1,
+                                2,
+                                -2,
+                                2
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The amendment expands the government’s authority to deny permits \nfor large gatherings under security uncertainty.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -2,
+                                -1
+                            ],
+                            "true": [
+                                -2,
+                                2,
+                                -2,
+                                2
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The clause removes the previous requirement for cross-department approval.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -2,
+                                -1
+                            ],
+                            "true": [
+                                -2,
+                                2,
+                                -2,
+                                2
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Officials claim the reform is a temporary safeguard in response to the recent explosion.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                0,
+                                1,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "writer": "marcus.ilan@mailnow.pt",
+                "writerName": "Marcus Ilan",
+                "title": "Clarification on Safety Code Update",
+                "date": "09:05",
+                "content": [
+                    {
+                        "text": "Reports circulating this morning exaggerate the scope of the amendment.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                -1,
+                                1,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The regulatory adjustment was approved through standard emergency protocol, not unilaterally.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -2,
+                                -1
+                            ],
+                            "true": [
+                                2,
+                                -1,
+                                2,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Two advisory councils were consulted prior to implementation.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                2,
+                                0,
+                                2,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The revision allows provisional permit suspensions for up to 48 hours during investigations.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                2,
+                                -1,
+                                2,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "No public gatherings have yet been denied under the updated provision.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                -1
+                            ],
+                            "inconsistent": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "govt": [
+            {
+                "writer": "2367648@portimail.com",
+                "writerName": "???????",
+                "title": "First Day",
+                "content": [
+                    {
+                        "text": "Welcome to Portia Apexium Report. We are the largest news outlet in Portia, \n and you have been picked personally to work alongside us.\n",
+                        "isContent": false,
+                        "webpage": false
+                    },
+                    {
+                        "text": "Your task as an official is to be a report reviewer. When someone wants \n to give us information to to broadcast, they would have to first be \n verified by proof checkers to make sure that the information is in fact correct. \n",
+                        "isContent": false,
+                        "webpage": false
+                    },
+                    {
+                        "text": "To make sure that the report they sent is satisfactory, you need to investigate \n and see evidence that might lead you to find the truth. \n Luckily, we have provided you with Sauron, a software \n ",
+                        "isContent": false,
+                        "webpage": false
+                    },
+                    {
+                        "text": "designed for you to highlight which informations are true, and which one are \n false, along with giving you the ability to perform actions like sending \n the message you just fact checked to the writers and whatnot.\n \n",
+                        "isContent": false,
+                        "webpage": false
+                    },
+                    {
+                        "text": "Please keep in mind that we do not give employees overtime, \n and we expect you to finish your daily task in that day. \n So making sure that you work optimally is important. \n",
+                        "isContent": false,
+                        "webpage": false
+                    }
+                ]
+            }
+        ],
+        "Explosion": [
+            {
+                "writer": "joe@mailnow.pt",
+                "writerName": "John Doe",
+                "title": "Explosion This Morning on Monday Market",
+                "content": [
+                    {
+                        "text": "An explosion occurred at 10:53 during Portia’s independence festival in Messenberg\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "One of the procession vehicle ignited mid route. As I was writing, the area had been closed off.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The police investigating said that the cause is still unknow\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "true": [
+                                -1,
+                                -1,
+                                1,
+                                -1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "but some of the witness told me that they saw a frayed wire near the fuel tank of the vehicle.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Currently, 7 have been found injured from the explosion directly, and 10 more from the crowd surge.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "No deaths have occurred so far.  No names have been released yet, but families of the affected \nare already informed.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Regional office rep was careful with wording. stressed there’s “no evidence of foul play at this \nstage.” Didn’t elaborate.",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                2,
+                                1,
+                                1,
+                                -1
+                            ],
+                            "true": [
+                                -2,
+                                -1,
+                                1,
+                                -2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Tell me if you want to push this news as fast as possible, \nor to wait for the official statement \nfrom the party responsible.",
+                        "isContent": false,
+                        "webpage": false
+                    }
+                ]
+            },
+            {
+                "writer": "adem.roland@mailnow.pt",
+                "writerName": "Adem Roland",
+                "title": "Festival Sabotage",
+                "content": [
+                    {
+                        "text": "A couple of hours ago\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "one of the transportation of the parade exploded after the fuel inside its tank ignited.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The area had been closed off\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "but the fire are still in the process of being put out\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "The incident is still being actively investigated\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                1,
+                                1,
+                                1,
+                                1
+                            ],
+                            "true": [
+                                -1,
+                                -1,
+                                1,
+                                -1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "but police footage from a security camera revealed an act of sabotage was done by an employee.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -1,
+                                -2
+                            ],
+                            "true": [
+                                1,
+                                2,
+                                -1,
+                                2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Since then\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "perpetrator have admitted that they’ve tried to slash the wire using a pocket knife\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -1,
+                                -2
+                            ],
+                            "true": [
+                                1,
+                                2,
+                                -1,
+                                2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "but failed to do so\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "true": [
+                                0,
+                                1,
+                                0,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "and that 3 other members are involved in the planning of the sabotage.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -1,
+                                -2
+                            ],
+                            "true": [
+                                1,
+                                2,
+                                -1,
+                                2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Though they refused to give out their names.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                0,
+                                -1,
+                                0,
+                                1
+                            ],
+                            "true": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "5 are currently being suspected to contributing to the incident \nby distracting nearby workers from going inside the room where the vehicle was stored.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -1,
+                                -2
+                            ],
+                            "true": [
+                                1,
+                                2,
+                                -1,
+                                2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "It is believed that the act was done as a crime of passion.\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                0,
+                                -1
+                            ],
+                            "true": [
+                                0,
+                                1,
+                                0,
+                                1
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "Official statement claimed that the lack of security and coordination caused the problem\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -2,
+                                -1,
+                                -2,
+                                -1
+                            ],
+                            "true": [
+                                -1,
+                                2,
+                                -2,
+                                2
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    {
+                        "text": "and that they will make sure future events will be directed more efficiently\n",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [
+                                -1,
+                                -1,
+                                -1,
+                                -1
+                            ],
+                            "true": [
+                                1,
+                                1,
+                                1,
+                                0
+                            ],
+                            "unsure": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>QroOS-2</title>
+    <title>Portian Apexium Report</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="assets/style.css" id="style">
@@ -11,10 +11,12 @@
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/fontawesome.js"></script>
     <script type="text/javascript" src="js/index.js" defer></script>
+    <script type="text/javascript" src="js/player.js" defer></script>
+    <script type="text/javascript" src="js/game.js" defer></script>
 </head>
 
-<body id="body">
-    <footer id="footer">
+<body id="body" style="display: none;">
+    <footer id="footer" style="display: none;">
         <button id="launcherToggle" onclick="toggleLauncher()">
             <img src="assets/logo.png"> Menu
         </button>
@@ -24,18 +26,38 @@
         <div class="tray">
             <span id="time">00:00</span>
         </div>
+
+        <!-- Tray items for the apps -->
         <button class="menubuttonminimized" id="email-menu">
             <img src="assets/mail.png"> Mail
+        </button>
+        <button class="menubuttonminimized" id="sauron-menu">
+            <img src="assets/Sauro.png"> Sauron
+        </button>
+        <button class="menubuttonminimized" id="portify-menu">
+            <img src="assets/music.png"> Portify Music
         </button>
     </footer>
     <div id="launcher">
         <input id="searchBar" placeholder="Search...">
     </div>
-    <div id="section">
+    <div id="section" style="display: none;">
+        <div id="sidebar">
+            <center style="color: white; margin-top: 5px;">
+                <b>Sauron Boards</b><br>
+                Portian Apexium Report
+            </center>
+            <button onclick="clockOut()">Clock Out</button>
+        </div>
+
         <!--Desktop Icons-->
         <button class="desktopIcon" ondblclick="toggleWindowVisibility('email', true)">
             <img src="assets/mail.png">
             <span>Mail</span>
+        </button>
+        <button class="desktopIcon" ondblclick="toggleWindowVisibility('portify', true)">
+            <img src="assets/music.png">
+            <span>Music</span>
         </button>
 
         <!--Apps Right Here-->
@@ -50,16 +72,90 @@
                         class="fa-solid fa-chevron-down"></i></button>
             </div>
             <div class="content" style="min-width: 600px; min-height: 350px;">
-                <div class="left"></div>
-                <div class="right"></div>
+                <div class="left" id="emailsLeft"></div>
+                <div class="right" id="emailReader">
+                    Select an E-Mail to read it here. <br><br>
+                    Enabled Extensions: <br>
+                    - Automatic Sorter<br>
+                    - Sauron
+                </div>
+            </div>
+        </div>
+        <div class="window" id="sauron">
+            <div class="header">
+                <div class="titlebar">
+                    <img src="assets/Sauro.png"> Sauron Analysis Software
+                </div>
+                <button class="closebutton" onclick="toggleWindowVisibility(this.parentNode.parentNode.id, false)"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <button class="minimize" onclick="minimizeWindow(this.parentNode.parentNode.id, true)"><i
+                        class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div class="content" style="min-width: 600px; min-height: 350px;">
+                <div class="left" id="sauronLeft"></div>
+                <div class="right" id="sauronRight"></div>
+            </div>
+        </div>
+        <div class="window" id="portify">
+            <div class="header">
+                <div class="titlebar">
+                    <img src="assets/music.png"> Portify Music
+                </div>
+                <button class="closebutton" onclick="toggleWindowVisibility(this.parentNode.parentNode.id, false)"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <button class="minimize" onclick="minimizeWindow(this.parentNode.parentNode.id, true)"><i
+                        class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div class="content" style="min-width: 350px; min-height: 150px;">
+                <div style="padding-inline: 10%; padding-top: 5%;">
+                    <h1 style="text-align: center;" class="audioname"></h1>
+                    <p style="text-align: center;" class="artistname">guy in portia</p>
+                    <audio id="player" preload="metadata">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div class="player-controls">
+                        <div style="text-align: center;">
+                            <button class="btn music trackprevious" aria-label="Play/Pause">
+                                <span class="icon">⏮</span>
+                            </button>
+                            <button class="btn music play-pause" aria-label="Play/Pause">
+                                <span class="icon">▶</span>
+                            </button>
+                            <button class="btn music tracknext" aria-label="Play/Pause">
+                                <span class="icon">⏭</span>
+                            </button>
+                        </div>
+
+
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+
+                        <span class="time current">0:00</span>
+                        <span class="time duration">0:00</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <span id="versionString">
         Property of the Portian<br>
         Ministry of Information<br>
         Device Tag 190409128549102
     </span>
+
+    <div id="outro">
+        <div>
+            <h1>Day 1</h1><br>
+            Government <progress id="government" max="10"></progress><br>
+            Civilian <progress id="civilian" max="10"></progress><br>
+            Bureaucrats <progress id="bureaucrats" max="10"></progress><br>
+            Resistance <progress id="rebels" max="10"></progress>
+        </div>
+    </div>
+
     <div class="effect"></div>
 </body>
 

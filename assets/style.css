@@ -7,6 +7,12 @@ body {
   background-color: black;
   background-repeat: no-repeat;
   height: 100vh;
+  animation: fadein;
+  animation-duration: 250ms;
+}
+
+html {
+  background-color: black;
 }
 
 @font-face {
@@ -18,26 +24,66 @@ body {
 footer {
   bottom: 0;
   background-color: #3d3d3d;
+  border: #4d4d4d outset 3px;
   height: 40px;
   position: fixed !important;
-  z-index: 3;
+  z-index: 999999;
   box-sizing: border-box;
   width: 100%;
-  border: #4d4d4d outset 3px;
   overflow: hidden;
   display: flex;
+}
+
+.openSauron {
+  right: 6px;
+  top: 45px;
+  position: absolute;
+  background: #4d4d4d;
+  border: #5d5d5d outset 3px;
+  padding: 5px;
+  color: white;
+}
+
+#sauronLeft {
+  padding: 5px;
+}
+
+#sidebar {
+  width: 15vw;
+  height: 100vh;
+  position: absolute;
+  background: #1d1d1dab;
+  right: 0;
+}
+
+.openSauron:active {
+  border: #4d4d4d inset 3px;
+}
+
+#sauronLeft button,
+#sidebar button {
+  background: #4d4d4d;
+  border: #5d5d5d outset 3px;
+  padding: 5px;
+  color: white;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#sauronLeft button:active,
+#sidebar button:active {
+  border: #4d4d4d inset 3px;
 }
 
 .window {
   display: none;
   animation: fadein;
   animation-duration: 250ms;
-  position: absolute;
+  position: absolute !important;
   min-width: fit-content;
   min-height: fit-content;
   width: fit-content;
   height: fit-content;
-  position: absolute;
 }
 
 .header {
@@ -45,9 +91,10 @@ footer {
   background-color: #3d3d3d;
   cursor: move;
   overflow: hidden;
-  height: 36px;
+  height: fit-content;
   border: #4d4d4d outset 3px;
   color: white;
+  box-sizing: content-box;
 }
 
 .content {
@@ -56,6 +103,7 @@ footer {
   border-top: none;
   width: 100%;
   height: calc(100% - 36px);
+  box-sizing: content-box;
 }
 
 .content iframe {
@@ -100,6 +148,7 @@ nav {
   font-size: 20px;
   margin-bottom: 5px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .menubuttonminimizing {
@@ -116,6 +165,56 @@ nav {
   background-color: #6d6d6d66;
   transition: all 250ms ease;
 }
+
+/* Audio stuff */
+.btn.music {
+  border: black solid 0px;
+  background-color: black;
+  cursor: pointer;
+  font-family: ra-inet;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  min-height: 30px;
+  min-width: 30px;
+  padding: 0;
+  margin: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #ff3366;
+  border-radius: 3px;
+  transition: width 0.25s linear;
+}
+
+#yes {
+  color: black !important;
+  background-color: green !important;
+}
+
+#no {
+  color: black !important;
+  background-color: red !important;
+}
+
+#undecided {
+  color: black !important;
+  background-color: yellow !important;
+}
+
+
+.progress-container {
+  flex: 1;
+  height: 6px;
+  background: #444;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* End of audio stuff */
 
 @keyframes fadein {
   0% {
@@ -141,13 +240,9 @@ nav {
   height: 100%;
 }
 
-.focused {
-  z-index: 1 !important;
-}
-
 #launcher {
   position: absolute;
-  z-index: 2;
+  z-index: 999999;
   bottom: 40px;
   width: 20vw;
   height: calc(40vh);
@@ -166,6 +261,23 @@ nav {
   overflow: auto;
 }
 
+#emailsLeft div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#emailsLeft div:hover {
+  opacity: 0.75;
+}
+
+#emailsLeft div:active {
+  opacity: 0.5;
+}
+
+#emailsLeft div:nth-child(2n) {
+  background: darkgray;
+}
+
 #launcherToggle,
 .menubuttonminimized,
 .header button {
@@ -177,6 +289,11 @@ nav {
   margin-right: 0;
   padding: 5px;
   font-size: 17px;
+  cursor: pointer;
+}
+
+.header button:active {
+  border: #4d4d4d inset 3px;
 }
 
 .menubuttonminimized {
@@ -191,7 +308,7 @@ nav {
   height: 100dvh;
   position: absolute;
   pointer-events: none;
-  z-index: 100;
+  z-index: 999999999;
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -236,7 +353,7 @@ nav {
 
 #versionString {
   position: absolute;
-  z-index: 5;
+  z-index: 999999;
   bottom: 0;
   right: 0;
   color: rgba(255, 255, 255, 0.75);
@@ -284,7 +401,7 @@ nav {
 }
 
 .desktopIcon {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: fit-content;
   background: none;
@@ -293,6 +410,7 @@ nav {
   color: white;
   text-shadow: black 1px 1px 0px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .desktopIcon img {
@@ -305,14 +423,53 @@ nav {
 
 .left {
   display: inline-block;
-  width: 30%;
+  width: 175px;
   height: 100%;
   min-height: 350px;
+  float: left;
+  background-color: lightgray;
 }
 
 .right {
   display: inline-block;
-  width: calc(70% - 5px);
+  width: calc(100% - 175px);
   height: 100%;
   min-height: 350px;
+  float: right;
+  padding: 5px;
+}
+
+#emailReader {
+  padding: 5px;
+}
+
+.notification {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  background-color: #3d3d3d;
+  border: #4d4d4d outset 3px;
+}
+
+#outro {
+  position: absolute;
+  z-index: 999999;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  color: white;
+  animation: fadein;
+  animation-duration: 1000ms;
+  display: none;
+}
+
+progress {
+  border-radius: 0;
 }
