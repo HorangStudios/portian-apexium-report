@@ -95,6 +95,7 @@ footer {
   border: #4d4d4d outset 3px;
   color: white;
   box-sizing: content-box;
+  height: 36px;
 }
 
 .content {
@@ -292,7 +293,6 @@ nav {
   padding: 5px;
   font-size: 17px;
   cursor: pointer;
-  height: 36px;
 }
 
 .header button:active {
