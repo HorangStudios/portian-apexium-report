@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>QroOS-2</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/style.css" id="style">
+    <link rel="stylesheet" href="assets/jqueryui.css" id="style">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/fontawesome.js"></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
+</head>
+
+<body id="body">
+    <footer id="footer">
+        <button id="launcherToggle" onclick="toggleLauncher()">
+            <img src="assets/logo.png"> Menu
+        </button>
+        <nav>
+            <ul id="footer1"></ul>
+        </nav>
+        <div class="tray">
+            <span id="time">00:00</span>
+        </div>
+        <button class="menubuttonminimized" id="email-menu">
+            <img src="assets/mail.png"> Mail
+        </button>
+    </footer>
+    <div id="launcher">
+        <input id="searchBar" placeholder="Search...">
+    </div>
+    <div id="section">
+        <!--Desktop Icons-->
+        <button class="desktopIcon" ondblclick="toggleWindowVisibility('email', true)">
+            <img src="assets/mail.png">
+            <span>Mail</span>
+        </button>
+
+        <!--Apps Right Here-->
+        <div class="window" id="email">
+            <div class="header">
+                <div class="titlebar">
+                    <img src="assets/mail.png"> Mail
+                </div>
+                <button class="closebutton" onclick="toggleWindowVisibility(this.parentNode.parentNode.id, false)"><i
+                        class="fa-solid fa-xmark"></i></button>
+                <button class="minimize" onclick="minimizeWindow(this.parentNode.parentNode.id, true)"><i
+                        class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div class="content" style="min-width: 600px; min-height: 350px;">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+    <span id="versionString">
+        Property of the Portian<br>
+        Ministry of Information<br>
+        Device Tag 190409128549102
+    </span>
+    <div class="effect"></div>
+</body>
+
+</html>
