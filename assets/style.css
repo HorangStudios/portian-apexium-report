@@ -292,6 +292,7 @@ nav {
   padding: 5px;
   font-size: 17px;
   cursor: pointer;
+  height: 36px;
 }
 
 .header button:active {
