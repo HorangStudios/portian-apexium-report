@@ -47,7 +47,7 @@
     </div>
     <div id="section" style="display: none;">
         <div id="sidebar">
-            <button onclick="clockOut()" >Clock Out</button>
+            <button onclick="clockOut()">Clock Out</button>
             <center style="color: white; margin-top: 5px;">
                 <b>Sauron Boards</b><br>
                 Portian Apexium Report
@@ -154,10 +154,26 @@
     <div id="outro">
         <div>
             <h1>Day 1</h1><br>
-            Government <progress id="government" max="10"></progress><br>
-            Civilian <progress id="civilian" max="10"></progress><br>
-            Bureaucrats <progress id="bureaucrats" max="10"></progress><br>
-            Resistance <progress id="rebels" max="10"></progress>
+            <div class="left">
+                Government<br>
+                Civilian<br>
+                Bureaucrats<br>
+                Resistance
+            </div>
+            <div class="right">
+                <div class="progressbar">
+                    <div id="government"></div>
+                </div><br>
+                <div class="progressbar">
+                    <div id="civilian"></div>
+                </div><br>
+                <div class="progressbar">
+                    <div id="bureaucrats"></div>
+                </div><br>
+                <div class="progressbar">
+                    <div id="rebels"></div>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -208,9 +208,15 @@ function clockOut() {
         grandTotals.rebel += topicTotals[topic].rebel;
     }
 
-    document.getElementById("government").value = 5 + grandTotals.govt;
-    document.getElementById("civilian").value = 5 + grandTotals.civ;
-    document.getElementById("bureaucrats").value = 5 + grandTotals.bur;
-    document.getElementById("rebels").value = 5 + grandTotals.rebel;
     document.getElementById("outro").style.display = 'flex';
+    document.getElementById("government").style.width = '50%';
+    document.getElementById("civilian").style.width = '50%';
+    document.getElementById("bureaucrats").style.width = '50%';
+    document.getElementById("rebels").style.width = '50%';
+    setTimeout(() => {
+        document.getElementById("government").style.width = `${(5 + grandTotals.govt) * 10}%`;
+        document.getElementById("civilian").style.width = `${(5 + grandTotals.civ) * 10}%`;
+        document.getElementById("bureaucrats").style.width = `${(5 + grandTotals.bur) * 10}%`;
+        document.getElementById("rebels").style.width = `${(5 + grandTotals.rebel) * 10}%`;
+    }, 1000);
 }

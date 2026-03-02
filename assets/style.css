@@ -95,7 +95,7 @@ footer {
   border: #4d4d4d outset 3px;
   color: white;
   box-sizing: content-box;
-  height: 36px;
+  height: 31px;
 }
 
 .content {
@@ -103,7 +103,7 @@ footer {
   border: #4d4d4d outset 3px;
   border-top: none;
   width: 100%;
-  height: calc(100% - 36px);
+  height: calc(100% - 40px);
   box-sizing: content-box;
 }
 
@@ -191,12 +191,12 @@ nav {
 }
 
 #yes {
-  color: black !important;
+  color: white !important;
   background-color: green !important;
 }
 
 #no {
-  color: black !important;
+  color: white !important;
   background-color: red !important;
 }
 
@@ -480,4 +480,36 @@ progress {
 .topic {
   padding: 5px;
   color: white;
+}
+
+.progressbar {
+  display: inline-block;
+  background: white;
+  height: 10px;
+  width: 150px;
+  border: white solid 1px;
+  margin-bottom: 7px;
+  margin-left: 10px;
+}
+
+.progressbar div {
+  background: green;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+#outro .left,
+#outro .right {
+  height: fit-content;
+  width: fit-content;
+  min-width: unset;
+  min-height: unset;
+  background: none;
+  text-align: right;
+  padding: unset;
+}
+
+#outro .left {
+  border-right: white solid 1px;
+  padding-right: 5px;
 }
