@@ -102,10 +102,6 @@ function spawnwindow(name, URL, icon, height, width) {
         containment: "#section",
         opacity: 0.75
     });
-
-    $(".window").resizable({
-        containment: "#section"
-    });
 }
 
 setInterval(async function () {
@@ -185,7 +181,24 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+var today;
 async function start() {
+    let params = new URLSearchParams(window.location.search);
+    let setDate = 0;
+
+    //load save
+    if (params.has("save")) {
+        let saveIndex = params.get("save");
+        let select = JSON.parse(JSON.parse(localStorage.getItem('saveData'))[saveIndex]);
+        setDate = select.day + 1;
+    } else {
+        setDate = 0;
+    }
+
+    //start day
+    dayCycle(setDate);
+
+    //desktop load
     await sleep(1000);
     document.getElementById("body").style.display = 'block';
     await sleep(1000);
@@ -193,7 +206,6 @@ async function start() {
     await sleep(100);
     document.getElementById("section").style.display = 'block';
     await sleep(500);
-    dayCycle(0);
 }
 
 start();

@@ -10,9 +10,9 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/fontawesome.js"></script>
-    <script type="text/javascript" src="js/index.js" defer></script>
     <script type="text/javascript" src="js/player.js" defer></script>
     <script type="text/javascript" src="js/game.js" defer></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
 </head>
 
 <body id="body" style="display: none;">
@@ -76,7 +76,7 @@
                 <button class="minimize" onclick="minimizeWindow(this.parentNode.parentNode.id, true)"><i
                         class="fa-solid fa-chevron-down"></i></button>
             </div>
-            <div class="content" style="min-width: 522px; min-height: 485px;">
+            <div class="content" style="min-width: 550px; min-height: 350px;">
                 <div class="left" id="emailsLeft"></div>
                 <div class="right" id="emailReader">
                     Select an E-Mail to read it here. <br><br>
@@ -115,6 +115,7 @@
                 <div style="padding-inline: 10%; padding-top: 5%;">
                     <h1 style="text-align: center;" class="audioname"></h1>
                     <p style="text-align: center;" class="artistname">guy in portia</p>
+                    <p style="text-align: center; opacity:0.6;">Approved by the Ministry of Information</p>
                     <audio id="player" preload="metadata">
                         <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                     </audio>

@@ -1,8 +1,10 @@
 async function dayCycle(day) {
     let emails = await fetch('campaign.json');
     emails = await emails.json();
+    today = day;
 
     let todayEmail = emails[day];
+    console.log(todayEmail)
     if (todayEmail["govt"]) {
         todayEmail["govt"].forEach((mail, i) => appendEmail(mail, i));
     }
@@ -213,10 +215,15 @@ function clockOut() {
     document.getElementById("civilian").style.width = '50%';
     document.getElementById("bureaucrats").style.width = '50%';
     document.getElementById("rebels").style.width = '50%';
+
     setTimeout(() => {
         document.getElementById("government").style.width = `${(5 + grandTotals.govt) * 10}%`;
         document.getElementById("civilian").style.width = `${(5 + grandTotals.civ) * 10}%`;
         document.getElementById("bureaucrats").style.width = `${(5 + grandTotals.bur) * 10}%`;
         document.getElementById("rebels").style.width = `${(5 + grandTotals.rebel) * 10}%`;
     }, 1000);
+
+    let allSaves = JSON.parse(localStorage.getItem('saveData')) || [];
+    allSaves.push(JSON.stringify({ "grandTotals": grandTotals, "day": today }, null, 2));
+    localStorage.setItem('saveData', JSON.stringify(allSaves));
 }

@@ -8,11 +8,36 @@
 </head>
 
 <body>
+  <div class="effect" style="z-index: 5; top: 0;"></div>
+
+  <div id="main-menu">
+    <p><i>Portian</i></p>
+    <p><i>Apexium</i></p>
+    <p><i>Report</i></p>
+    <br>
+    <p><i>A game by Horangstudios</i></p>
+    <br>
+    <hr>
+    <br>
+    <p>PRODUCT ACCESS TERMINAL</p>
+    <p>Licensed Deployment: Ministry of Information</p>
+    <p>Terminal ID: PRS-MOI-4471</p>
+    <p>Shift Supervisor: obfuscated.</p>
+    <p>Clearance Level: UNKNOWN - PLEASE ENTER</p>
+    <br>
+    <hr>
+    <br>
+    <p>[↑↓] Move Selection | [Enter] Select</p>
+    <br>
+    <p class="menu-item selected">Verify Identity and Begin Shift</p>
+    <p class="menu-item">Terminate Session</p>
+    <br>
+  </div>
+
   <div id="loader">
     <img src="assets/intro.webp" id="loadimage" alt="Loading Image">
     <h1 class="text">Poros Enterpise</h1>
   </div>
-  <div class="effect" style="z-index: 5;"></div>
 </body>
 
 </html>
@@ -26,12 +51,30 @@
     margin: 0;
     padding: 0;
     background: black;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   p {
     color: white;
     font-family: 'ra-inet';
     font-size: 1.5rem;
+    padding-inline: 15px;
+  }
+
+  .menu-item {
+    white-space: pre;
+    padding-left: 20px;
+  }
+
+  .selected::before {
+    content: "> ";
+  }
+
+  .selected {
+    background: white;
+    color: black;
   }
 
   #loader {
@@ -85,7 +128,7 @@
       opacity: 1;
     }
   }
-  
+
   @keyframes fade-out {
     from {
       opacity: 1;
@@ -98,27 +141,76 @@
 </style>
 
 <script>
+  // Menu Navigation
+  var items;
+  var actions = {};
+  var updateMenu = () => items.forEach((item, index) => item.classList.toggle("selected", index === selectedIndex));
+
+  function startMenu() {
+    items = document.querySelectorAll(".menu-item");
+    selectedIndex = 0;
+  }; startMenu();
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") {
+      selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+      updateMenu();
+    } else if (e.key === "ArrowUp") {
+      selectedIndex = (selectedIndex + 1) % items.length;
+      updateMenu();
+    } else if (e.key === "Enter") {
+      const selectedText = items[selectedIndex].textContent;
+      if (selectedText === "Verify Identity and Begin Shift") {
+        start();
+      } else if (actions[selectedText]) {
+        actions[selectedText]();
+      }
+    }
+  });
+
+  // Animations and Intro Sequence
   document.getElementById("loader").style.display = "none";
 
-  function createEl(text) {
+  function formatText(text) {
+    return text
+      .replace(/##(.*?)##/g, '<span style="color:green">$1</span>')
+      .replace(/#(.*?)#/g, '<span style="color:yellow">$1</span>');
+  }
+
+  function createEl(text, append = false) {
     if (text == "") {
       const br = document.createElement("br");
       br.className = "introtext";
-      document.body.appendChild(br);
+      append ? document.body.appendChild(br) : document.body.prepend(br);
     }
+
     const p = document.createElement("p");
-    p.innerText = text;
+    p.innerHTML = formatText(text);
     p.className = "introtext";
-    document.body.appendChild(p);
+    append ? document.body.appendChild(p) : document.body.prepend(p);
     return p;
   }
 
+  function stringGen() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 24; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+  function spamrandomstuff() {
+    createEl(`DECRYPTING /home/officer/${stringGen()}`);
+    setTimeout(spamrandomstuff, 50);
+  }
+
   async function beginIntro() {
-    document.querySelectorAll('.introtext').forEach(element => {
-      element.remove();
-    });
+    document.querySelectorAll('.introtext').forEach(element => element.remove());
     const p = createEl("Welcome, Officer.");
     await sleep(1000);
+    spamrandomstuff()
 
     document.getElementById("loader").style.display = "block";
     const img = document.querySelector('#loader img');
@@ -128,44 +220,141 @@
     text.style.animation = 'fade-in 2.5s linear'
 
     await sleep(8000)
-    document.querySelectorAll('.introtext').forEach(element => {
-      element.remove();
-    });
+    document.querySelectorAll('.introtext').forEach(element => element.remove());
     text.style.animation = 'fade-out 2.5s linear'
     img.style.animation = 'fade-out 2.5s linear, rotate 60s linear infinite'
-
-    await sleep(2000)
-    text.style.display = "none";
-    img.style.display = "none";
-    window.location.href = "desktop.html"
   }
 
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+  // saves
+  async function openSaves() {
+    let allSaves = JSON.parse(localStorage.getItem('saveData')) || [];
+    let text = document.querySelector('#loader h1');
+    let img = document.querySelector('#loader img');
+
+    //blank game
+    if (allSaves.length == 0) {
+      beginIntro();
+      await sleep(10000);
+      text.style.display = "none";
+      img.style.display = "none";
+      window.location.href = "desktop.html"
+    };
+
+    document.querySelectorAll('.introtext').forEach(element => element.remove());
+    createEl("");
+    createEl("<hr>")
+    createEl("");
+    createEl("[Del] Delete Session | [↑↓] Move Selection | [Enter] Select")
+    createEl("");
+
+    allSaves.forEach(async (element, index) => {
+      element = JSON.parse(element);
+
+      var strname = `${index}: Day ${element["day"]}`;
+      var btn = document.createElement('p');
+      btn.innerText = strname;
+      btn.classList.add("menu-item");
+      document.body.appendChild(btn);
+      startMenu();
+
+      if (index == allSaves.length - 1) {
+        createEl("", true);
+
+        var newgame = document.createElement('p');
+        newgame.innerText = `New Session`;
+        newgame.classList.add("menu-item");
+        newgame.classList.add("selected");
+        document.body.appendChild(newgame);
+        startMenu();
+
+        actions['New Session'] = async () => {
+          document.querySelectorAll('.introtext').forEach(element => element.remove());
+          document.querySelectorAll('.menu-item').forEach(element => element.remove());
+
+          beginIntro();
+          await sleep(10000);
+
+          text.style.display = "none";
+          img.style.display = "none";
+          window.location.href = `desktop.html`
+        }
+
+        createEl("", true);
+        createEl("<hr>", true);
+        createEl("", true);
+        createEl("You may start a clean session or continue where you left off", true);
+        createEl("System did not properly shut down during the last session", true);
+        createEl("", true);
+        createEl("⚠ POWER INTERRUPTION NOTICE", true);
+      };
+
+      actions[strname] = async () => {
+        document.querySelectorAll('.introtext').forEach(element => element.remove());
+        document.querySelectorAll('.menu-item').forEach(element => element.remove());
+
+        beginIntro();
+        await sleep(10000);
+
+        text.style.display = "none";
+        img.style.display = "none";
+        window.location.href = `desktop.html?save=${index}`
+      }
+    });
+  }
+
   async function start() {
+    document.getElementById("main-menu").style.display = "none";
+    document.getElementById("main-menu").innerHTML = '';
+
     createEl("[BOOT SEQUENCE INITIATED]")
     await sleep(1500);
     createEl("")
     await sleep(500);
-    createEl("Loading Ministry Kernel 4.12...")
-    await sleep(500);
-    createEl("Checking Surveillance Drivers...")
-    await sleep(500);
-    createEl("Mounting /data/citizens...")
-    await sleep(500);
-    createEl("Mounting /data/journalists...")
-    await sleep(500);
-    createEl("Mounting /data/dissidents...")
-    await sleep(1500);
+    var cur = createEl("[ #WAIT# ] Loading Ministry Kernel 4.12...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Loading Ministry Kernel 4.12...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Checking Surveillance Drivers...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Checking Surveillance Drivers...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Mounting /data/citizens...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Mounting /data/citizens...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Mounting /data/journalists...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Mounting /data/journalists...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Mounting /data/dissidents...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK##  ] Mounting /data/dissidents...")
+    await sleep(1000);
     createEl("")
     await sleep(500);
-    createEl("Starting Bureaucratic Decision Engine...")
-    await sleep(500);
-    createEl("Loading Propaganda Filter...")
-    await sleep(500);
-    createEl("Calibrating Narrative Alignment...")
+    var cur = createEl("[ #WAIT# ] Starting Bureaucratic Decision Engine...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Starting Bureaucratic Decision Engine...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Loading Propaganda Filter...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Loading Propaganda Filter...")
+    await sleep(250);
+    var cur = createEl("[ #WAIT# ] Calibrating Narrative Alignment...")
+    await sleep(250);
+    cur.remove();
+    var cur = createEl("[ ##OK## ] Calibrating Narrative Alignment...")
     await sleep(1500);
     createEl("")
     await sleep(500);
@@ -204,8 +393,9 @@
     await sleep(500);
     createEl("Welcome, Officer.")
     await sleep(1000);
-    beginIntro();
+
+    openSaves();
   }
 
-  start();
+  //start();
 </script>
