@@ -13,6 +13,24 @@ async function dayCycle(day) {
     otherEmails.forEach(topic => todayEmail[topic].forEach((item, i) => appendEmail(item, i, topic)));
 }
 
+function getPreviousTotals() {
+    try {
+        let allSaves = JSON.parse(localStorage.getItem('saveData')) || [];
+        let total = { govt: 0, civ: 0, bur: 0, rebel: 0 };
+        allSaves.forEach(saveStr => {
+            let save = JSON.parse(saveStr);
+            total.govt += save.grandTotals.govt || 0;
+            total.civ += save.grandTotals.civ || 0;
+            total.bur += save.grandTotals.bur || 0;
+            total.rebel += save.grandTotals.rebel || 0;
+        });
+        return total;
+    } catch (error) {
+        console.error('Error loading previous totals:', error);
+        return { govt: 0, civ: 0, bur: 0, rebel: 0 };
+    }
+}
+
 function appendEmail(email, index, topic = false) {
     let emailsLeft = document.getElementById("emailsLeft");
     let emailReader = document.getElementById("emailReader");
@@ -177,13 +195,15 @@ function sauronAnalysis(email, topic, index) {
 }
 
 function clockOut() {
+    const grandTotals = getPreviousTotals();
+    console.log(grandTotals);
     const topicTotals = {};
-    const grandTotals = {
-        govt: 0,
-        civ: 0,
-        bur: 0,
-        rebel: 0
-    };
+    // const grandTotals = {
+    //     govt: 0,
+    //     civ: 0,
+    //     bur: 0,
+    //     rebel: 0
+    // };
 
     for (const topic in sauronResults) {
         topicTotals[topic] = {
