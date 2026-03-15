@@ -82,12 +82,17 @@ footer {
   position: absolute !important;
   min-width: fit-content;
   min-height: fit-content;
-  width: fit-content;
-  height: fit-content;
+  width: 40vw;
+  height: 50vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  resize: both;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .header {
-  width: 100%;
+  width: calc(100% - 4px);
   background-color: #3d3d3d;
   cursor: move;
   overflow: hidden;
@@ -104,7 +109,11 @@ footer {
   border-top: none;
   width: 100%;
   height: calc(100% - 40px);
-  box-sizing: content-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 .content iframe {
@@ -425,21 +434,21 @@ nav {
 }
 
 .left {
-  display: inline-block;
-  width: 175px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
   height: 100%;
-  min-height: 350px;
-  float: left;
   background-color: lightgray;
+  flex-shrink: 0;
+  overflow: auto;
 }
 
 .right {
   display: inline-block;
-  width: calc(100% - 175px);
   height: 100%;
-  min-height: 350px;
-  float: right;
+  width: 75%;
   padding: 5px;
+  overflow: auto;
 }
 
 #emailReader {

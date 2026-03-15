@@ -16,8 +16,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [3, -2, 2, -2],
-                            "true": [-4, 3, -2, 3]
+                            "false": [3,-2,2,-2],
+                            "true": [-4,3,-2,3]
                         }
                     },
                     {
@@ -25,8 +25,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [3, -2, 2, -2],
-                            "true": [-4, 3, -2, 3]
+                            "false": [3,-2,2,-2],
+                            "true": [-4,3,-2,3]
                         }
                     },
                     {
@@ -34,8 +34,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [3, -2, 2, -2],
-                            "true": [-4, 3, -2, 3]
+                            "false": [3,-2,2,-2],
+                            "true": [-4,3,-2,3]
                         }
                     },
                     {
@@ -43,8 +43,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [3, -2, 2, -2],
-                            "true": [-4, 3, -2, 3]
+                            "false": [3,-2,2,-2],
+                            "true": [-4,3,-2,3]
                         }
                     },
                     {
@@ -52,8 +52,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [2, -1, 1, -1],
-                            "true": [-3, 3, -1, 3]
+                            "false": [2,-1,1,-1],
+                            "true": [-3,3,-1,3]
                         }
                     },
                     {
@@ -61,8 +61,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [3, -2, 2, -2]
+                            "false": [-2,1,-1,1],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -70,8 +70,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [2, -1, 1, -1],
-                            "true": [-3, 2, -1, 2]
+                            "false": [2,-1,1,-1],
+                            "true": [-3,2,-1,2]
                         }
                     },
                     {
@@ -79,8 +79,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [3, -2, 2, -2],
-                            "true": [-4, 3, -2, 3]
+                            "false": [3,-2,2,-2],
+                            "true": [-4,3,-2,3]
                         }
                     },
                     {
@@ -100,14 +100,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-3, 2, -2, 2],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-3,2,-2,2],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -115,14 +109,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,1,-1,1],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -130,14 +118,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-3, 2, -2, 2],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-3,2,-2,2],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -145,14 +127,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,1,-1,1],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -160,14 +136,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,1,-1,1],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -175,14 +145,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [2, -1, 1, -1],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,1,-1,1],
+                            "true": [2,-1,1,-1]
                         }
                     },
                     {
@@ -190,14 +154,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-3, 2, -2, 2],
-                            "true": [3, -2, 2, -2],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-3,2,-2,2],
+                            "true": [3,-2,2,-2]
                         }
                     },
                     {
@@ -205,14 +163,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [-2, 1, -1, 1],
-                            "true": [2, -1, 1, -1],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,1,-1,1],
+                            "true": [2,-1,1,-1]
                         }
                     },
                     {
@@ -235,24 +187,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                0
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,0]
                         }
                     },
                     {
@@ -260,24 +196,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -2,
-                                -1
-                            ],
-                            "true": [
-                                -1,
-                                2,
-                                -2,
-                                2
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-2,-1],
+                            "true": [-1,2,-2,2]
                         }
                     },
                     {
@@ -285,24 +205,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -2,
-                                -1
-                            ],
-                            "true": [
-                                -2,
-                                2,
-                                -2,
-                                2
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-2,-1],
+                            "true": [-2,2,-2,2]
                         }
                     },
                     {
@@ -310,24 +214,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -2,
-                                -1
-                            ],
-                            "true": [
-                                -2,
-                                2,
-                                -2,
-                                2
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-2,-1],
+                            "true": [-2,2,-2,2]
                         }
                     },
                     {
@@ -335,24 +223,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                0,
-                                1,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,0,1,-1]
                         }
                     }
                 ]
@@ -368,24 +240,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                -1,
-                                1,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,-1,1,-1]
                         }
                     },
                     {
@@ -393,24 +249,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -2,
-                                -1
-                            ],
-                            "true": [
-                                2,
-                                -1,
-                                2,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-2,-1],
+                            "true": [2,-1,2,-1]
                         }
                     },
                     {
@@ -418,24 +258,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                2,
-                                0,
-                                2,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [2,0,2,-1]
                         }
                     },
                     {
@@ -443,24 +267,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                2,
-                                -1,
-                                2,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [2,-1,2,-1]
                         }
                     },
                     {
@@ -468,24 +276,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                -1
-                            ],
-                            "inconsistent": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,-1]
                         }
                     }
                 ]
@@ -536,24 +328,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -561,24 +337,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -586,24 +346,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "true": [
-                                -1,
-                                -1,
-                                1,
-                                -1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [1,1,1,1],
+                            "true": [-1,-1,1,-1]
                         }
                     },
                     {
@@ -611,24 +355,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,1]
                         }
                     },
                     {
@@ -636,24 +364,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,1]
                         }
                     },
                     {
@@ -661,24 +373,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,1]
                         }
                     },
                     {
@@ -686,24 +382,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                2,
-                                1,
-                                1,
-                                -1
-                            ],
-                            "true": [
-                                -2,
-                                -1,
-                                1,
-                                -2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [2,1,1,-1],
+                            "true": [-2,-1,1,-2]
                         }
                     },
                     {
@@ -723,24 +403,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -748,24 +412,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1,1,1,1]
                         }
                     },
                     {
@@ -773,24 +421,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [0,0,0,0],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -798,24 +430,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [0,0,0,0],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -823,24 +439,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                1,
-                                1,
-                                1,
-                                1
-                            ],
-                            "true": [
-                                -1,
-                                -1,
-                                1,
-                                -1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [1,1,1,1],
+                            "true": [-1,-1,1,-1]
                         }
                     },
                     {
@@ -848,24 +448,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -1,
-                                -2
-                            ],
-                            "true": [
-                                1,
-                                2,
-                                -1,
-                                2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-1,-2],
+                            "true": [1,2,-1,2]
                         }
                     },
                     {
@@ -873,24 +457,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [0,0,0,0],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -898,24 +466,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -1,
-                                -2
-                            ],
-                            "true": [
-                                1,
-                                2,
-                                -1,
-                                2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-1,-2],
+                            "true": [1,2,-1,2]
                         }
                     },
                     {
@@ -923,24 +475,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "true": [
-                                0,
-                                1,
-                                0,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [0,0,0,0],
+                            "true": [0,1,0,1]
                         }
                     },
                     {
@@ -948,24 +484,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -1,
-                                -2
-                            ],
-                            "true": [
-                                1,
-                                2,
-                                -1,
-                                2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-1,-2],
+                            "true": [1,2,-1,2]
                         }
                     },
                     {
@@ -973,24 +493,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                0,
-                                -1,
-                                0,
-                                1
-                            ],
-                            "true": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [0,-1,0,1],
+                            "true": [0,0,0,0]
                         }
                     },
                     {
@@ -998,24 +502,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -1,
-                                -2
-                            ],
-                            "true": [
-                                1,
-                                2,
-                                -1,
-                                2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-1,-2],
+                            "true": [1,2,-1,2]
                         }
                     },
                     {
@@ -1023,24 +511,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                0,
-                                -1
-                            ],
-                            "true": [
-                                0,
-                                1,
-                                0,
-                                1
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,0,-1],
+                            "true": [0,1,0,1]
                         }
                     },
                     {
@@ -1048,24 +520,8 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -2,
-                                -1,
-                                -2,
-                                -1
-                            ],
-                            "true": [
-                                -1,
-                                2,
-                                -2,
-                                2
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-2,-1,-2,-1],
+                            "true": [-1,2,-2,2]
                         }
                     },
                     {
@@ -1073,24 +529,163 @@
                         "isContent": true,
                         "webpage": false,
                         "effect": {
-                            "false": [
-                                -1,
-                                -1,
-                                -1,
-                                -1
-                            ],
-                            "true": [
-                                1,
-                                1,
-                                1,
-                                0
-                            ],
-                            "unsure": [
-                                0,
-                                0,
-                                0,
-                                0
-                            ]
+                            "false": [-1,-1,-1,-1],
+                            "true": [1, 1, 1, 0]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "explosion": [
+            {
+                "writer": "anmabirg@portimail.now",
+                "writerName": "anma birgirr",
+                "title": "Indicent at idependence festival",
+                "content": [
+                    {
+                        "text": "explosion during one of the independence parade happened at around 10:34AM happened.",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-1, -1, -1, 0],
+                            "true": [0, 1, 0, 1]
+                        }
+                    },
+                    {
+                        "text": "Cause unknown but witness saw a frayed cable near the fuel tank on one of the fuel tank",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-2, 2, -1, 2]
+                        }
+                    },
+                    {
+                        "text": "Official statements not made yet",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-1, 1, -1, 1]
+                        }
+                    },
+                    {
+                        "text": "No casualty has been found,",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-1, -1, 0, 0],
+                            "true": [1, 1, 0, -1]
+                        }
+                    },
+                    {
+                        "text": "5 victims from the explosion,",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-1, 1, 0, 1]
+                        }
+                    },
+                    {
+                        "text": "10 more after bein trampled by the crowd surge",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-1, 1, 0, 1]
+                        }
+                    },
+                    {
+                        "text": "No names have been released,",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-1, -1, 0, 0],
+                            "true": [0, 0, 0, 0]
+                        }
+                    },
+                    {
+                        "text": "involved victims have had their families notified.",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-1, -1, 0, 0],
+                            "true": [1, 1, 0, -1]
+                        }
+                    },
+                    {
+                        "text": "Party involved urged people to select words carefully as there’s no evidence of foul play",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-2, 1, -1, 1],
+                            "true": [2, -1, 1, -1]
+                        }
+                    }
+                ]
+            }
+        ],
+        "Messenberg Explosion Investigation": [
+            {
+                "writer": "amanuel@press.pt",
+                "writerName": "Alease Manuel",
+                "title": "Explosion in Messenberg",
+                "content": [
+                    {
+                        "text": "Employee involved in independence parade caught on CCTV footage sabotaging the vehicle that exploded by attempting to cut the wire using a small knife, but failed",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [2, -1, 1, -1],
+                            "true": [-3, 2, -1, 3]
+                        }
+                    },
+                    {
+                        "text": "After interrogation, the worker revealed 3 more workers being involved in the situation, but refused to reveal their names.",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-2, 1, 0, 2]
+                        }
+                    },
+                    {
+                        "text": "Motive of their crime is unknown, but some speculated it to be a crime of passion",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [0, -1, 0, 0],
+                            "true": [-1, 1, 0, 1]
+                        }
+                    },
+                    {
+                        "text": "9 have been selected as suspect in the investigation",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [1, -1, 0, -1],
+                            "true": [-1, 1, 0, 1]
+                        }
+                    },
+                    {
+                        "text": "Further investigation is underway",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [-1, -1, 0, 0],
+                            "true": [1, 0, 1, -1]
+                        }
+                    },
+                    {
+                        "text": "Company associated said that the lack of coordination and security caused the incident to happen, and that it won’t happen in the future",
+                        "isContent": true,
+                        "webpage": false,
+                        "effect": {
+                            "false": [2, -1, 1, -1],
+                            "true": [-2, 2, -1, 2]
                         }
                     }
                 ]

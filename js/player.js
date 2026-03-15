@@ -1,5 +1,5 @@
 const playlist = [
-    { title: 'SoundHelix Song 1', artist: 'T. Schürger', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+    { title: 'A Corpse in My Arms on Awakening', artist: 'Bull of Heaven', src: 'assets/044_Excerpt.mp3' },
     { title: 'Get OFF My Colony!', artist: 'Ministry of Entertainment', src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
     { title: 'GOVERNMENT APPROVED TRACK #3', artist: 'Ministry of Entertainment', src: 'track3.mp3' }
 ];
@@ -8,6 +8,7 @@ const audio = document.getElementById('player');
 audio.src = playlist[0].src;
 const playPauseBtn = document.querySelector('.play-pause');
 const playIcon = playPauseBtn.querySelector('.icon');
+
 const progressBar = document.querySelector('.progress-bar');
 const progressContainer = document.querySelector('.progress-container');
 const currentTimeEl = document.querySelector('.current');
